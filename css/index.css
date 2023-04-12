@@ -345,3 +345,83 @@ body {
 	padding-top: 2rem;
 	font-size: 1.2rem;
 }
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+	.header {
+		height: 48px;
+	}
+	.header-content {
+		justify-content: center;
+	}
+	.header-item {
+		font-size: 1rem;
+		padding: 1rem;
+	}
+	.portrait {
+		flex-direction: column;
+		padding: 0 1.5rem;
+		box-sizing: border-box;
+		width: 100%;
+		align-items: center;
+	}
+	figcaption .name {
+		margin-top: 1rem;
+	}
+	.resume {
+		padding: 0 1.5rem;
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+	.badge span {
+		display: inline-block;
+		margin: 0.25rem 0;
+	}
+	.footer {
+		line-height: 1.5;
+	}
+	.section-portfolio {
+		flex-direction: column;
+	}
+	.section-portfolio a {
+		width: 100%;
+		border-width: 1px 0;
+	}
+	.section-portfolio a:nth-child(3n-1) {
+		width: 100%;
+	}
+	.section-portfolio a:nth-child(1),
+	.section-portfolio a:nth-child(2),
+	.section-portfolio a:nth-child(3) {
+		border-top: 1px;
+	}
+	.section-portfolio a:nth-child(4),
+	.section-portfolio a:nth-child(5),
+	.section-portfolio a:nth-child(6) {
+		border-top: 0;
+	}
+	.section-portfolio a:nth-child(6) {
+		border-bottom: 0;
+	}
+	.section-portfolio a:nth-child(7),
+	.section-portfolio a:nth-child(8),
+	.section-portfolio a:nth-child(9) {
+		border-bottom: 1px;
+	}
+	.section-contact {
+		width: 100%;
+		height: 100%;
+		padding: 1.5rem;
+		overflow-x: hidden;
+		box-sizing: border-box;
+	}
+	.gform {
+		width: calc(100% - 5rem);
+		padding: 2rem;
+	}
+	.gform .input-group input[type="text"],
+	.gform .input-group input[type="email"],
+	.gform .input-group textarea {
+		width: calc(100% - 1.3rem);
+	}
+}
